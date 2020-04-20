@@ -54,7 +54,7 @@ def get_image_url():
 @run_async
 def bop(update, context):
     url = get_image_url()
-    add_user(chat_id, update.message.chat.username, update.message.chat.first_name)
+    # add_user(chat_id, update.message.chat.username, update.message.chat.first_name)
     chat_id = update.message.chat_id
     context.bot.send_photo(chat_id=chat_id, photo=url)
 
